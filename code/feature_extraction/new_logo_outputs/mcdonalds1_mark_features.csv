@@ -1,0 +1,2 @@
+name,index,ncolors,nregions,frac,pcm,h_sym,v_sym,rep_frac,rep_pcm,h_pos,v_pos,avg_left,avg_right,avg_top,avg_bot,abs_left,abs_right,abs_top,abs_bot,ch_density,ch_entropy,ar,ncorners,down_diag,vert,up_diag,hor
+mcdonalds1,1,2,4,0.8698369537122238,1.2163473490825751,0.9635272863885509,0.961747338941148,0.3538094933727751,71.29704419227636,0.49924471299093653,0.49924471299093653,False,False,False,False,False,False,False,False,0.9997296630889111,0.11526080913127025,1.0,1,0.026208766380478987,0.47401717126073206,0.025756891098056935,0.47401717126073206

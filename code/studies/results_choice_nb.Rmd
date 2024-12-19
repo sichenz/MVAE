@@ -1,0 +1,203 @@
+---
+title: 'Results: Logos Choice Study'
+author: "Ryan Dew"
+output:
+  pdf_document: default
+  html_notebook: default
+---
+
+# Data Cleaning
+
+```{r}
+data = read.csv("~/Dropbox/1_proj/logos/code/studies/results/1c_results_final.csv")
+colnames(data) = data[1,]
+data = data[substr(data$`Start Date`, 1, 10) == "2021-02-03", ]
+```
+
+First, let's extract the relevant parts of the raw data: I'll create a new variable called `set` that says which of the five sets the person saw. Then, for each person, I'll compute the number of correct and incorrect choices, and filter by those that answered 12 questions, which eliminates anyone who did not complete the experiment:
+
+```{r}
+cleaned = data.frame(id = data$WBLID)
+cleaned$set = ifelse(data$`1_brand_21_domain_logo - [Field-5]` != "", 1,
+                     ifelse(data$`1_brand_19_domain_logo - [Field-5]` != "", 2,
+                            ifelse(data$`1_brand_6_domain_logo - [Field-5]` != "", 3,
+                                   ifelse(data$`1_brand_11_domain_logo - [Field-5]` != "", 4, 5))))
+
+cleaned$correct = apply(data, 1, function(x) sum(x == "${lm://Field/6}"))
+cleaned$incorrect = apply(data, 1, function(x) sum(x == "${lm://Field/7}"))
+cleaned = cleaned[cleaned$correct + cleaned$incorrect == 12,]
+```
+
+# Simple Analysis
+
+The overall fraction correct is:
+
+```{r}
+mean(cleaned$correct/12)
+```
+
+The distribution of correct responses is:
+
+```{r}
+barplot(table(cleaned$correct), xlab = "Number of Matching Responses", ylab = "Count", col = "goldenrod1")
+
+pdf(file = "1c_barplot.pdf", height=4.5, width=6)
+barplot(table(cleaned$correct), xlab = "Number of correct responses (out of 12)", ylab = "Count", col = "goldenrod1", main = "Study 1")
+dev.off()
+```
+
+
+# Simple Binomial Model: Whole Data 
+
+To get confidence bounds, I'll use a simple binomial model: denote respondents with index $i$, and the number of correct responses as $y_i$. Then, the model is:
+
+$$ y_i \sim \mathrm{Binom}(12, \theta) $$
+$$ \theta \sim \mathrm{Unif}(0,1) $$
+In Stan, that model is:
+
+```{r}
+library(rstan)
+
+binom_model = "
+data {
+  int<lower=1> N;     // number of participants
+  int<lower=1> M;     // number of choices
+  int<lower=0> y[N];  // number of correct responses
+} 
+parameters {
+  real<lower=0, upper=1> theta;
+}
+model {
+  theta ~ uniform(0,1);
+  for(i in 1:N)
+    y[i] ~ binomial(M, theta);
+}
+"
+```
+
+Run that on the data:
+
+```{r results='hide', message=FALSE}
+simple_binom = stan(model_code = binom_model,
+                    data = list(N = nrow(cleaned), M = 12, y = cleaned$correct),
+                    seed = 7926, refresh = 0)
+```
+
+Summary:
+
+```{r}
+print(simple_binom, "theta")
+```
+
+
+The 95% credible interval is [0.63, 0.67], far from 0.5, indicating respondents could determine significantly better than chance which was the coherent trait.
+
+
+# Simple Binomial Model: Just Logos Questions 
+
+We can also examine whether the respondents were able to match just a single domain correctly. Most relevant is logos. To do that, we extract just the logos questions:
+
+```{r}
+logo_cols = sapply(strsplit(colnames(data), "_"), function(x) "logo - [Field-5]" %in% x)
+logo_only = data[,logo_cols]
+logo_cleaned = data.frame(id = data$WBLID)
+logo_cleaned$correct = apply(logo_only, 1, function(x) sum(x == "${lm://Field/6}"))
+logo_cleaned$incorrect = apply(logo_only, 1, function(x) sum(x == "${lm://Field/7}"))
+logo_cleaned = logo_cleaned[logo_cleaned$correct + logo_cleaned$incorrect == 3,]
+```
+
+Then do the same analyses:
+
+```{r}
+mean(logo_cleaned$correct/3)
+```
+
+
+```{r, fig.width=4}
+barplot(table(logo_cleaned$correct))
+```
+\newline
+For the logos, the fraction correct is even higher. What about confidence bounds?
+
+```{r}
+logo_binom = stan(model_code = binom_model,
+                  data = list(N = nrow(logo_cleaned), M = 3, y = logo_cleaned$correct),
+                  seed = 7926, refresh = 0)
+print(logo_binom, "theta")
+```
+
+The 95% credible interval for the correct response rate is [0.66, 0.73], again, far from 0.5 (chance guessing).
+
+
+# Check: Do the results vary by sets? 
+
+Finally, let's see if the percentage of correct responses varied by which set people were assigned to. Recall that there were five randomly selected choice sets. It's possible that some were easier than others, just by chance.
+
+First, let's see the mean fraction of correct responses by set:
+```{r}
+by(cleaned$correct, cleaned$set, function(x) mean(x/12))
+```
+
+Indeed, set 2 seemed very easy; set 4 seemed very difficult.
+
+We can estimate credible intervals for the set rates using a simple hierarchical model. Specifically, I will use the following model: again denoting respondents as $i$, and the number of correct responses by $y_i$. Let $S_i$ denote which set the respondent was assigned to, $S_i \in \{1,...,5\}$. Let $s$ index sets. Then:
+$$y_i \sim \mathrm{Binom}(12, \theta_{S_i}) $$
+$$\theta_s = \mathrm{logit}^{-1}(\phi_s)$$
+$$\phi_s \sim \mathcal{N}(\mu, \sigma)$$
+$$\mu \sim \mathcal{N}(0,1.5)$$
+$$\sigma \sim \mathcal{N}^+(0,1)$$
+These prior choices are weakly informative. Specifically, they imply the following distribution for $\mathrm{logit}^{-1}(\mu)$, the population correct choice rate:
+```{r}
+hist(plogis(rnorm(20000,0,1.5)), main = "Prior: Population Correct Rate")
+```
+
+And the following prior predictive for $\theta_s$:
+```{r}
+hist(plogis(rnorm(20000, rnorm(20000, 0, 1.5), abs(rnorm(20000,0,1)))), main = "Prior: Theta_s")
+```
+
+Coding this in Stan:
+```{r}
+binom_hier1 = "
+data {
+  int<lower=1> N;       // number of participants
+  int<lower=1> M;       // number of choices
+  int<lower=1> S;       // number of sets
+  int<lower=0> y[N];    // number of correct responses
+  int<lower=1> set[N];  // which set was the person assigned to
+} 
+parameters {
+  real mu;
+  real<lower=0> sigma;
+  vector[S] phi;
+}
+model {
+  mu ~ normal(0,1.5);
+  sigma ~ normal(0,1);
+  phi ~ normal(mu, sigma);
+  
+  for(i in 1:N)
+    y[i] ~ binomial_logit(M, phi[set[i]]);
+}
+generated quantities {
+  real pop_rate;
+  vector[S] theta;
+  
+  pop_rate = inv_logit(mu);
+  for(s in 1:S){
+    theta[s] = inv_logit(phi[s]);
+  }
+}"
+```
+
+
+Running it:
+```{r, message=FALSE}
+hier1 = stan(model_code = binom_hier1, 
+             data = list(N = nrow(cleaned), M = 12, S = 5, y = cleaned$correct, set = cleaned$set),
+             seed = 7926, refresh = 0)
+
+print(hier1, c("pop_rate","theta"))
+```
+
+The set specific rates range from [0.51,0.75] for set 1, to [0.75, 0.82] for set 2. The set with the lowest mean, set 4, still has a credible interval away from zero, [0.52, 0.61]. 

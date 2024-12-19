@@ -1,0 +1,101 @@
+selem,label,selem_desc,avg_frac,ftype,ver
+0,4,"Blocky letters, D, J, U",0.018826564,sans,bold
+1,1,"Line based designs, medium sized",0.097540946,NA,NA
+2,1,"Small, geometric decorations",0.028905483,NA,NA
+3,3,Blocky n,0.016387384,sans,bold
+4,1,Small round decorative elements,0.035192139,NA,NA
+5,1,Large boxes,0.465884436,NA,NA
+6,1,"Long, horizontal, boxy",0.23482909,NA,NA
+7,1,Medium square decorations,0.12912803,NA,NA
+8,4,Decorative font,0.024817968,sans,bold
+9,4,Rounded fonts,0.038938839,sans,bold
+10,1,Solid squares,0.02578997,NA,NA
+11,6,Mix of chars and ovals,0.030118071,NA,NA
+12,4,Circular fonts,0.02507855,sans,bold
+13,3,Oldstyle a,0.01152631,serif,orig
+14,4,Diagonal fonts,0.018287288,sans,bi
+15,6,Small curves decorations and fonts,0.021130856,NA,NA
+16,1,Small diagonal decorative,0.019663348,NA,NA
+17,1,"Large solid decorative (house, apple, etc.)",0.310587865,NA,NA
+18,3,R,0.015697749,mi,mix
+19,3,Serif N,0.012679588,serif,orig
+20,6,"two chars combined, or solid blocky smallish decorations",0.034673796,NA,NA
+21,3,E,0.013104916,sans,bold
+22,3,very blocky E,0.022877889,sans,bold
+23,1,Thin lines (outlines),0.02054744,NA,NA
+24,4,"Italics, bold blocky",0.024444811,sans,bi
+25,6,Mixture of strings and curved long solid elements,0.032050622,NA,NA
+26,1,"Large, rounded, geometric shapes overlayed with text",0.372000822,NA,NA
+27,1,"Diagonal geometric solid, small size",0.025350934,NA,NA
+28,1,Small curved geometric decorative,0.024589417,NA,NA
+29,1,Large geometric text overlayed,0.450637642,NA,NA
+30,3,Blocky G,0.028726524,serif,bold
+31,4,"Mostly H, some M",0.023284574,callig,bold
+32,6,Mixed italic fonts and font like decorative elements (&),0.033918891,NA,NA
+33,6,Rounded blocky,0.040676816,NA,NA
+34,6,Not very coherent... hollow objects?,0.02440898,NA,NA
+35,1,"Small decorations, diagonal orientation",0.024112761,NA,NA
+36,4,"S and E, bold orig",0.0216204,sans,bold
+37,4,N H,0.01700306,sans,bold
+38,3,M,0.015164946,serif,orig
+39,3,A,0.018744633,sans,bold
+40,4,Narrow fonts,0.025790302,sans,condensed
+41,1,Small geometric decorations,0.026581101,NA,NA
+42,6,Narrow hollow decorations and fonts,0.021456348,NA,NA
+43,4,H U n D,0.01581766,serif,orig
+44,1,L-like,0.021415363,NA,NA
+45,4,Mostly oldstyle a,0.022901332,serif,bold
+46,3,Mostly oldstyle a,0.021528409,mix,mix
+47,3,p,0.025698458,sans,mix
+48,4,R p n,0.027845681,wrong,wrong
+49,3,e,0.016392418,sans,bold
+50,4,Mostly R,0.021605436,sans,bi
+51,1,Diagonal geometric decorative,0.022913998,NA,NA
+52,3,M,0.025903183,sans,bold
+53,6,Mix of diagonal ovals and P?,0.025215529,NA,NA
+54,6,n and n-like decorations,0.026266648,NA,NA
+55,6,Combined decorative strings and some small decorative objects,0.033578081,NA,NA
+56,3,R,0.020067891,sans,bold
+57,1,"Small curved, L-like decorative objects",0.031572007,NA,NA
+58,1,Small tall rectangular decorations,0.028454015,NA,NA
+59,1,"Medium-sized partially hollow (overlayed) decorations (shield, boxes, big char)",0.169015308,NA,NA
+60,4,e and c,0.01924998,sans,bold
+61,1,"Large, mostly circular, with overlay",0.376025648,NA,NA
+62,3,Flat N,0.025735684,sans,bold
+63,3,oldstyle a,0.016847831,sans,bold
+64,4,mixed italics,0.024802637,sans,italics
+65,1,"Small, filled in circles or D-like objects",0.032901818,NA,NA
+66,1,"Large, horizontal rectangles with overlay",0.585077239,NA,NA
+67,6,Combined strings and curved decorations,0.02219175,NA,NA
+68,1,"Medium sized, mostly overlaid geometric decorations, mostly boxy, mixed with some strings",0.275562214,NA,NA
+69,4,Mostly h,0.025796264,mix,mix
+70,1,"Small, curvy decorations",0.015823361,NA,NA
+71,6,Small curvy decorations mixed with letters,0.022772527,NA,NA
+72,6,"Tall, narrow, decorations (decorative Y, a deer)",0.023903319,NA,NA
+73,4,Mostly blocky E,0.033845786,sans,bold
+74,1,"Small decorations, like an L rotated clockwise 90 degrees",0.034696859,NA,NA
+75,3,S,0.011472655,sans,orig
+76,4,Mostly V,0.029087912,sans,bold
+77,1,Small-medium hollow circle decorations,0.065550399,NA,NA
+78,1,Tall small decorations,0.026683268,NA,NA
+79,6,"Strings and chars, m and w",0.021688321,NA,NA
+80,4,N R U,0.033572958,sans,italics
+81,3,K,0.028567469,sans,bold
+82,1,"Medium-sized, horizontal decorative elements",0.145575287,NA,NA
+83,4,Mostly italics A,0.025328001,wrong,wrong
+84,4,Mix oldstyle a and d,0.015577985,sans,orig
+85,1,"Large box, probably a color background",0.672839032,NA,NA
+86,1,Up diagonal line,0.016991638,NA,NA
+87,4,Strings and serif fonts,0.016496946,serif,bold
+88,3,Narrow e,0.009966524,sans,bold
+89,3,Elongated e,0.014494839,sans,orig
+90,4,Serif P r and E,0.014098376,serif,orig
+91,1,Small horizontal line-like,0.017877266,NA,NA
+92,1,Small-medium triangles,0.02795902,NA,NA
+93,6,Mix of small a and box,0.028504374,NA,NA
+94,6,"Thin lines, round + strings",0.030055937,NA,NA
+95,3,R,0.021268816,sans,bold
+96,4,Flattened sans fonts,0.036180709,sans,mix
+97,4,Very small decorative fonts,0.01239391,callig,condensed
+98,4,"E and F, narrow",0.019844786,mix,bold
+99,3,N,0.024041089,sans,bold

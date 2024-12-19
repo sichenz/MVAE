@@ -1,0 +1,16 @@
+,long_desc,short_desc
+0,"thin, wispy, horizontal designs, containing some combined letters, other real marks that are also elongated and thin",wispy_horizontal_lines
+1,"mostly bulky marks that are somewhat rectangular, but but with spaces inside, likely from overlaid letters",bulky_hollow_geometric
+2,"these marks tend to be detailed, and are not square or round per se, but rather have an equal aspect ratio, such that they could fit in a circle, many are geometric patterns arranged in a shape",detailed_fit_in_circle
+3,"these are rectangles, stars, ovals, typically simple bulky shapes",simple_shapes
+4,"long horizontal rectangles or ovals, typically dense, could be backgrounds over which letters were overlaid",long_horizonal
+5,mostly circular marks,circular
+6,"vertical, narrow marks, somewhat geometric, like things stacked",vertical_narrow
+7,"square marks, some with a pattern overlaid, but many just plain squares",square
+8,"thin vertical rectangles, some could be missed l's or i's",thin_vertical_rectangle
+9,"very difficult one to describe, most are dense, and geometric, many have a repeating pattern made of dense components",dense_simple_geometric
+10,"typically horizontally oriented, but more complex, many are missed combined letters, or repeating patterns",horizontal_complex
+11,"typically circular, but hollow or missing some parts of the inside",hollow_circles
+12,mostly lines and other shapes that appear very faint and thin,very_thin
+13,"many of these are distinct detailed marks, like the nbc feathers, or a heart, or a leaf",very_detailed
+14,"almost entirely mis-classified letters (R, e, B)",bad_letters

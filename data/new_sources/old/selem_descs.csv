@@ -1,0 +1,101 @@
+selem,label,selem_desc
+0,4,"Blocky letters, D, J, U"
+1,1,"Line based designs, medium sized"
+2,1,"Small, geometric decorations"
+3,3,Blocky n
+4,1,Small round decorative elements
+5,1,Large boxes
+6,1,"Long, horizontal, boxy"
+7,1,Medium square decorations
+8,4,Decorative font
+9,4,Rounded fonts
+10,1,Solid squares
+11,6,Mix of chars and ovals
+12,4,Circular fonts
+13,3,Oldstyle a
+14,4,Diagonal fonts
+15,6,Small curves decorations and fonts
+16,1,Small diagonal decorative
+17,1,"Large solid decorative (house, apple, etc.)"
+18,3,R
+19,3,Serif N
+20,6,"two chars combined, or solid blocky smallish decorations"
+21,3,E
+22,3,very blocky E
+23,1,Thin lines (outlines)
+24,4,"Italics, bold blocky"
+25,6,Mixture of strings and curved long solid elements
+26,1,"Large, rounded, geometric shapes overlayed with text"
+27,1,"Diagonal geometric solid, small size"
+28,1,Small curved geometric decorative
+29,1,Large geometric text overlayed
+30,3,Blocky G
+31,4,"Mostly H, some M"
+32,6,Mixed italic fonts and font like decorative elements (&)
+33,6,Rounded blocky
+34,6,Not very coherent... hollow objects?
+35,1,"Small decorations, diagonal orientation"
+36,4,"S and E, bold orig"
+37,4,N H
+38,3,M
+39,3,A
+40,4,Narrow fonts
+41,1,Small geometric decorations
+42,6,Narrow hollow decorations and fonts
+43,4,H U n D
+44,1,L-like
+45,4,Mostly oldstyle a
+46,3,Mostly oldstyle a
+47,3,p
+48,4,R p n
+49,3,e
+50,4,Mostly R
+51,1,Diagonal geometric decorative
+52,3,M
+53,6,Mix of diagonal ovals and P?
+54,6,n and n-like decorations
+55,6,Combined decorative strings and some small decorative objects
+56,3,R
+57,1,"Small curved, L-like decorative objects"
+58,1,Small tall rectangular decorations
+59,1,"Medium-sized partially hollow (overlayed) decorations (shield, boxes, big char)"
+60,4,e and c
+61,1,"Large, mostly circular, with overlay"
+62,3,Flat N
+63,3,oldstyle a
+64,4,mixed italics
+65,1,"Small, filled in circles or D-like objects"
+66,1,"Large, horizontal rectangles with overlay"
+67,6,Combined strings and curved decorations
+68,1,"Medium sized, mostly overlaid geometric decorations, mostly boxy, mixed with some strings"
+69,4,Mostly h
+70,1,"Small, curvy decorations"
+71,6,Small curvy decorations mixed with letters
+72,6,"Tall, narrow, decorations (decorative Y, a deer)"
+73,4,Mostly blocky E
+74,1,"Small decorations, like an L rotated clockwise 90 degrees"
+75,3,S
+76,4,Mostly V
+77,1,Small-medium hollow circle decorations
+78,1,Tall small decorations
+79,6,"Strings and chars, m and w"
+80,4,N R U
+81,3,K
+82,1,"Medium-sized, horizontal decorative elements"
+83,4,Mostly italics A
+84,4,Mix oldstyle a and d
+85,1,"Large box, probably a color background"
+86,1,Up diagonal line
+87,4,Strings and serif fonts
+88,3,Narrow e
+89,3,Elongated e
+90,4,Serif P r and E
+91,1,Small horizontal line-like
+92,1,Small-medium triangles
+93,6,Mix of small a and box
+94,6,"Thin lines, round + strings"
+95,3,R
+96,4,Flattened sans fonts
+97,4,Very small decorative fonts
+98,4,"E and F, narrow"
+99,3,N

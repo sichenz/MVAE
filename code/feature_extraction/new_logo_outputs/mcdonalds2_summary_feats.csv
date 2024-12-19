@@ -1,0 +1,2 @@
+ar,down_diag,entropy,gpc,h,h_sym,hor,mean_light,mean_sat,mmark_absbot,mmark_absleft,mmark_absright,mmark_abstop,mmark_avgbot,mmark_avgleft,mmark_avgright,mmark_avgtop,name,nchars,ncolors,ncorners,nmarks,nregions,perc_white,sd_light,sd_sat,up_diag,v_sym,vert,w
+1.1409001956947162,0.11366197183098592,0.36292564637385116,14.823771048504309,511,0.9986293749347357,0.10112676056338028,1.0,0.3464812302414205,False,False,False,False,False,False,False,False,mcdonalds2,1,2,7,0,1,0.6336447217811911,0.0,0.45499021348731716,0.11366197183098592,0.11410817981732041,0.6715492957746478,583

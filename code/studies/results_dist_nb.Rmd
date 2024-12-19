@@ -1,0 +1,94 @@
+---
+title: 'Results: Distances Study'
+author: "Ryan Dew"
+date: "2/10/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Processing the data:
+
+In this code, I process all the data, to figure out which response was the correct response, then translate correct responses into 1s, and incorrect or missing responses into 0s. Note that everyone had 12 questions.
+
+```{r}
+library(stringr)
+
+truth = read.csv("~/Dropbox/1_proj/logos/code/4fold/tsi/dist_test_firms.csv", row.names = 1)
+random = read.csv("~/Dropbox/1_proj/logos/data/studies/randomized_dist_test.csv")
+
+which_correct = data.frame(focal = truth$focal, correct_index = rep(NA, nrow(truth)))
+for(i in 1:nrow(truth)){
+  which_correct$correct_index[i] = which(random[i,2:3] == truth$near[i])
+}
+which_correct$focal_formatted = gsub("-", " ", str_to_title(truth$focal))
+
+results = read.csv("~/Dropbox/1_proj/logos/code/studies/results/dist_final.csv")
+
+
+qs_raw = results[,12:61]
+colnames(qs_raw) = sapply(strsplit(as.character(qs_raw[1,]), " - "), function(x) x[1])
+qs_raw = qs_raw[-(1:2),]
+
+qs = qs_raw
+qs[qs == "Brand #1: ${lm://Field/7}"] = 1
+qs[qs == "Brand #2: ${lm://Field/13}"] = 2
+qs[qs == ""] = 0
+
+qs = apply(qs, 2, as.numeric)
+
+for(j in 1:ncol(qs)){
+  correct_resp = which_correct[which_correct$focal_formatted == colnames(qs)[j], "correct_index"]
+  qs[,j] = ifelse(qs[,j] == correct_resp, 1, 0)
+}
+```
+
+The overall average number correct: 
+
+```{r}
+mean(rowSums(qs)/12)
+```
+
+
+Here is the distribution of the number of correct responses across people:
+
+```{r}
+barplot(table(factor(rowSums(qs), levels = 0:12)), xlab = "Number Correct", main = "Distribution of Correct Responses")
+
+pdf(file = "dist_barplot.pdf", height=4.5, width=6)
+barplot(table(factor(rowSums(qs), levels = 0:12)), xlab = "Number of correct responses (out of 12)", ylab = "Count", col = "goldenrod1", main = "Study 2")
+dev.off()
+```
+
+To analyze this properly, we will again have to use some kind of binomial model. The idea is, we want to get some kind of interval around the probability of answering the question correctly, and show that it's far away from 0.5. Each person had 12 questions, so we'll model each person's outcome as a binomial RV, with a common success rate, then use a simple Bayesian model to get a credible interval around that rate. This is the same approach as used in the other study.
+
+```{r}
+library(rstan)
+
+binom_model = "
+data {
+  int<lower=1> N;     // number of participants
+  int<lower=1> M;     // number of choices
+  int<lower=0> y[N];  // number of correct responses
+} 
+parameters {
+  real<lower=0, upper=1> theta;
+}
+model {
+  theta ~ uniform(0,1);
+  for(i in 1:N)
+    y[i] ~ binomial(M, theta);
+}
+"
+
+simple_binom = stan(model_code = binom_model,
+                    data = list(N = nrow(qs), M = 12, y = rowSums(qs)),
+                    seed = 7926, refresh = 0)
+
+print(simple_binom, "theta")
+```
+
+The mean percent correct is 0.77, with 95\% credible interval [0.75, 0.78].
+

@@ -1,0 +1,79 @@
+<!-- HIT template: DataCollection-v3.0 --><!-- The following snippet enables the 'responsive' behavior on smaller screens -->
+<meta content="width=device-width,initial-scale=1" name="viewport" />
+<section class="container" id="DataCollection"><!-- Instructions -->
+<div class="row">
+<div class="col-xs-12 col-md-12">
+<div class="panel panel-primary"><!-- WARNING: the ids "collapseTrigger" and "instructionBody" are being used to enable expand/collapse feature --><a class="panel-heading" href="javascript:void(0);" id="collapseTrigger"><strong>Data Collection Instructions</strong> <span class="collapse-text">(Click to expand)</span> </a>
+<div class="panel-body" id="instructionBody">We are compiling a database on brand identity. For the firm with the ID given below, we would like to you find the firm&#39;s website, and copy/paste text from that website describing the firm&#39;s brand identity. Note that we do <strong>NOT </strong>want mere decriptions of what the firm/brand does; rather, we want text that describes how the brand views itself. These kinds of descriptions are commonly found on the firm&#39;s homepage, About Us page, Mission Statement, Corporate Values, Investor Relations page, or Annual Reports.</div>
+
+<ul>
+	<li>Short example of a <strong>good</strong> description: Apple is an innovative technology company that seeks to design cutting-edge, sleek, customer-centric products.</li>
+	<li>Short example of a <strong>bad </strong>description: Apple is a technology company that designs and sells laptops, smart phones, and tablets.</li>
+</ul>
+
+The description you gather should be at least one paragraph long; ideally, it should be several paragraphs long, taken from different pages of the company's website.
+</div>
+</div>
+<!-- End Instructions --><!-- Data Collection Layout -->
+
+<div class="row" id="workContent">
+<div class="col-sm-8 col-sm-offset-2">
+<table class="table table-condensed table-bordered">
+	<colgroup>
+		<col class="col-xs-6 col-md-4" />
+		<col class="col-xs-6 col-md-8" />
+	</colgroup>
+	<tbody>
+		<tr>
+			<td><label>Restaurant name:</label></td>
+			<td>${name}</td>
+		</tr>
+		<tr>
+			<td><label>Address:</label></td>
+			<td>${address}</td>
+		</tr>
+		<tr>
+			<td><label>Phone number:</label></td>
+			<td>${phone}</td>
+		</tr>
+	</tbody>
+</table>
+
+<div class="form-group"><label for="web_url">Website address:</label> <input class="form-control" id="web_url" name="web_url" placeholder="http://" required="" type="url" /></div>
+</div>
+</div>
+</div>
+</section>
+<!-- End Data Collection Layout --><!-- Please note that Bootstrap CSS/JS and JQuery are 3rd party libraries that may update their url/code at any time. Amazon Mechanical Turk (MTurk) is including these libraries as a default option for you, but is not responsible for any changes to the external libraries --><!-- External CSS references -->
+<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" integrity="sha384-IS73LIqjtYesmURkDE9MXKbXqYA8rvKEp/ghicjem7Vc3mGRdQRptJSz60tvrB6+" rel="stylesheet" /><!-- Open internal style sheet -->
+<style type="text/css">#collapseTrigger{
+  color:#fff;
+  display: block; 
+  text-decoration: none;
+}
+#submitButton{
+  white-space: normal;
+}
+.image{
+  margin-bottom: 15px; 
+}
+</style>
+<!-- End internal style sheet --><!-- External JS references --><script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js" integrity="sha384-s1ITto93iSMDxlp/79qhWHi+LsIi9Gx6yL+cOKDuymvihkfol83TYbLbOw+W/wv4" crossorigin="anonymous"></script><!-- Open internal javascript --><script>
+  $(document).ready(function() {
+    // Instructions expand/collapse
+    var content = $('#instructionBody');
+    var trigger = $('#collapseTrigger');
+    content.hide();
+    $('.collapse-text').text('(Click to expand)');
+    trigger.click(function(){
+      content.toggle();
+      var isVisible = content.is(':visible');
+      if(isVisible){
+        $('.collapse-text').text('(Click to collapse)');
+      }else{
+        $('.collapse-text').text('(Click to expand)');
+      }
+    });
+    // end expand/collapse
+  });
+</script><!-- Close internal javascript -->

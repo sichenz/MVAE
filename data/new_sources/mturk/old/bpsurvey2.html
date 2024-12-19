@@ -1,0 +1,510 @@
+<!-- HIT template: DataCollection-v3.0 --><!-- The following snippet enables the 'responsive' behavior on smaller screens -->
+<meta content="width=device-width,initial-scale=1" name="viewport" />
+<section class="container" id="DataCollection"><!-- Instructions -->
+<div class="row">
+<div class="col-xs-12 col-md-12">
+<div class="panel panel-primary"><!-- WARNING: the ids "collapseTrigger" and "instructionBody" are being used to enable expand/collapse feature --><a class="panel-heading" href="javascript:void(0);" id="collapseTrigger"><strong>Data Collection Instructions</strong> <span class="collapse-text">(Click to show/hide)</span> </a>
+<div class="panel-body" id="instructionBody">
+<p>We are compiling a database on brand identity. For the firm with the ID given below, we would like to you find a matching entry in CrunchBase, an online database of companies:</p>
+
+<p style="text-align: center;"><a href="http://www.crunchbase.com/">www.crunchbase.com</a></p>
+
+<p>Specifically, we need the <strong>URL to the firm&#39;s CrunchBase profile</strong><em> </em>and their <strong>detailed description</strong>. To find these two things:</p>
+
+<ol>
+	<li>Navigate to CrunchBase using the above link, search for the company listed below, and go to that firm&#39;s CrunchBase page.</li>
+	<li>Copy and paste the URL of the firm&#39;s profile.<br />
+	Example using the firm &#39;colgate&#39;: https://www.crunchbase.com/organization/colgate-palmolive#/entity</li>
+	<li>Copy and paste the firm&#39;s<strong> detailed description</strong>, which can be found in the &quot;Company Details&quot; section of the profile (typically below where it says Number of Employees).<br />
+	​<strong><span style="color:#FF0000;">IMPORTANT: We do NOT want the short description labeled as just &quot;Description&quot; given in the &quot;Overview&quot; section of the profile! </span></strong></li>
+</ol>
+
+<p>Ocassionally, the firm will not be listed in CrunchBase. <strong>This should be very rare</strong>. If the firm is not listed in CrunchBase, please indicate that in the first question and do not answer the rest of the questions. If the firm is in CrunchBase, but does not have a detailed description, please indicate that in the first question, and still retrieve the URL of the profile. <strong>Please note that we will verify that this is indeed the case before accepting responses with this box checked.</strong></p>
+</div>
+</div>
+</div>
+<!-- End Instructions --><!-- Data Collection Layout -->
+
+<div class="row" id="workContent">
+<div class="col-sm-8 col-sm-offset-2">
+<table class="table table-condensed table-bordered">
+	<colgroup>
+		<col class="col-xs-6 col-md-4" />
+		<col class="col-xs-6 col-md-8" />
+	</colgroup>
+	<tbody>
+		<tr>
+			<td><label>Company name:</label></td>
+			<td>${name}</td>
+		</tr>
+		<tr>
+			<td><label>Logo:</label></td>
+			<td>${logo}</td>
+		</tr>
+		<tr>
+			<td><label>Text describing the brand's identity:</label></td>
+			<td>${about_us}</td>
+		</tr>
+		<tr>
+			<td><label>Text describing what the brand does:</label></td>
+			<td>${cb_desc}</td>
+		</tr>
+	</tbody>
+</table>
+<p>Are you familiar with this brand?</p>
+<table class="table">
+	<tbody>
+		<tr>
+			<td style="text-align:center">I have not heard of this brand</td>
+			<td style="text-align:center">I have heard of this brand</td>
+			<td style="text-align:center">I am very familiar with this brand</td>
+		</tr>
+		<tr>
+			<td style="text-align:center" width="120"><input name="familiar_with" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="familiar_with" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="familiar_with" type="radio" value="2" /></td>
+		</tr>
+	</tbody>
+</table>
+<p>Have you previously purchased a product or service from this brand?</p>
+<table class="table">
+	<tbody>
+		<tr>
+			<td style="text-align:center" width="120">No &nbsp;<input name="purchased" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120">Yes &nbsp;<input name="purchased" type="radio" value="1" /></td>
+		</tr>
+	</tbody>
+</table>
+<p>Based on the brand logo and descriptions given above, please rate to what extent the following words describe the brand:</p>
+<table class="table">
+	<tbody>
+		<tr>
+			<td>&nbsp;</td>
+			<td style="text-align:center">Not at all descriptive</td>
+			<td style="text-align:center">Slightly descriptive</td>
+			<td style="text-align:center">Moderately descriptive</td>
+			<td style="text-align:center">Very descriptive</td>
+			<td style="text-align:center">Extremely descipritive</td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">sentimental</td>
+			<td style="text-align:center" width="120"><input name="sentimental" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="sentimental" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="sentimental" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="sentimental" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="sentimental" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">hard working</td>
+			<td style="text-align:center" width="120"><input name="hard working" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="hard working" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="hard working" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="hard working" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="hard working" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">family-oriented</td>
+			<td style="text-align:center" width="120"><input name="family-oriented" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="family-oriented" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="family-oriented" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="family-oriented" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="family-oriented" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">leader</td>
+			<td style="text-align:center" width="120"><input name="leader" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="leader" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="leader" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="leader" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="leader" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">small-town</td>
+			<td style="text-align:center" width="120"><input name="small-town" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="small-town" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="small-town" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="small-town" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="small-town" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">independent</td>
+			<td style="text-align:center" width="120"><input name="independent" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="independent" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="independent" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="independent" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="independent" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">young</td>
+			<td style="text-align:center" width="120"><input name="young" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="young" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="young" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="young" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="young" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">rugged</td>
+			<td style="text-align:center" width="120"><input name="rugged" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="rugged" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="rugged" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="rugged" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="rugged" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">cheerful</td>
+			<td style="text-align:center" width="120"><input name="cheerful" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="cheerful" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="cheerful" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="cheerful" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="cheerful" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">good looking</td>
+			<td style="text-align:center" width="120"><input name="good looking" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="good looking" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="good looking" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="good looking" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="good looking" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">honest</td>
+			<td style="text-align:center" width="120"><input name="honest" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="honest" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="honest" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="honest" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="honest" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">reliable</td>
+			<td style="text-align:center" width="120"><input name="reliable" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="reliable" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="reliable" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="reliable" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="reliable" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">down-to-earth</td>
+			<td style="text-align:center" width="120"><input name="down-to-earth" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="down-to-earth" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="down-to-earth" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="down-to-earth" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="down-to-earth" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">friendly</td>
+			<td style="text-align:center" width="120"><input name="friendly" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="friendly" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="friendly" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="friendly" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="friendly" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">outdoorsy</td>
+			<td style="text-align:center" width="120"><input name="outdoorsy" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="outdoorsy" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="outdoorsy" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="outdoorsy" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="outdoorsy" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">corporate</td>
+			<td style="text-align:center" width="120"><input name="corporate" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="corporate" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="corporate" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="corporate" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="corporate" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">real</td>
+			<td style="text-align:center" width="120"><input name="real" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="real" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="real" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="real" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="real" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">exciting</td>
+			<td style="text-align:center" width="120"><input name="exciting" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="exciting" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="exciting" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="exciting" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="exciting" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">confident</td>
+			<td style="text-align:center" width="120"><input name="confident" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="confident" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="confident" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="confident" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="confident" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">spirited</td>
+			<td style="text-align:center" width="120"><input name="spirited" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="spirited" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="spirited" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="spirited" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="spirited" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">sincere</td>
+			<td style="text-align:center" width="120"><input name="sincere" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="sincere" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="sincere" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="sincere" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="sincere" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">boring</td>
+			<td style="text-align:center" width="120"><input name="boring" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="boring" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="boring" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="boring" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="boring" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">masculine</td>
+			<td style="text-align:center" width="120"><input name="masculine" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="masculine" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="masculine" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="masculine" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="masculine" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">old fashioned</td>
+			<td style="text-align:center" width="120"><input name="old fashioned" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="old fashioned" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="old fashioned" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="old fashioned" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="old fashioned" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">glamorous</td>
+			<td style="text-align:center" width="120"><input name="glamorous" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="glamorous" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="glamorous" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="glamorous" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="glamorous" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">depressing</td>
+			<td style="text-align:center" width="120"><input name="depressing" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="depressing" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="depressing" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="depressing" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="depressing" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">contemporary</td>
+			<td style="text-align:center" width="120"><input name="contemporary" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="contemporary" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="contemporary" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="contemporary" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="contemporary" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">western</td>
+			<td style="text-align:center" width="120"><input name="western" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="western" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="western" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="western" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="western" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">upper class</td>
+			<td style="text-align:center" width="120"><input name="upper class" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="upper class" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="upper class" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="upper class" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="upper class" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">ugly</td>
+			<td style="text-align:center" width="120"><input name="ugly" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="ugly" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="ugly" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="ugly" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="ugly" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">daring</td>
+			<td style="text-align:center" width="120"><input name="daring" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="daring" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="daring" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="daring" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="daring" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">cool</td>
+			<td style="text-align:center" width="120"><input name="cool" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="cool" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="cool" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="cool" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="cool" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">tough</td>
+			<td style="text-align:center" width="120"><input name="tough" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="tough" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="tough" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="tough" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="tough" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">old</td>
+			<td style="text-align:center" width="120"><input name="old" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="old" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="old" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="old" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="old" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">feminine</td>
+			<td style="text-align:center" width="120"><input name="feminine" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="feminine" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="feminine" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="feminine" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="feminine" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">fake</td>
+			<td style="text-align:center" width="120"><input name="fake" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="fake" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="fake" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="fake" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="fake" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">charming</td>
+			<td style="text-align:center" width="120"><input name="charming" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="charming" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="charming" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="charming" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="charming" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">original</td>
+			<td style="text-align:center" width="120"><input name="original" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="original" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="original" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="original" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="original" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">wholesome</td>
+			<td style="text-align:center" width="120"><input name="wholesome" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="wholesome" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="wholesome" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="wholesome" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="wholesome" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">secure</td>
+			<td style="text-align:center" width="120"><input name="secure" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="secure" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="secure" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="secure" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="secure" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">up-to-date</td>
+			<td style="text-align:center" width="120"><input name="up-to-date" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="up-to-date" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="up-to-date" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="up-to-date" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="up-to-date" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">trendy</td>
+			<td style="text-align:center" width="120"><input name="trendy" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="trendy" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="trendy" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="trendy" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="trendy" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">intelligent</td>
+			<td style="text-align:center" width="120"><input name="intelligent" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="intelligent" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="intelligent" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="intelligent" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="intelligent" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">imaginative</td>
+			<td style="text-align:center" width="120"><input name="imaginative" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="imaginative" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="imaginative" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="imaginative" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="imaginative" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">unique</td>
+			<td style="text-align:center" width="120"><input name="unique" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="unique" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="unique" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="unique" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="unique" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">technical</td>
+			<td style="text-align:center" width="120"><input name="technical" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="technical" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="technical" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="technical" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="technical" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">successful</td>
+			<td style="text-align:center" width="120"><input name="successful" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="successful" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="successful" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="successful" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="successful" type="radio" value="4" /></td>
+		</tr>
+		<tr>
+			<td style="text-align:left"  width="200">smooth</td>
+			<td style="text-align:center" width="120"><input name="smooth" type="radio" value="0" /></td>
+			<td style="text-align:center" width="120"><input name="smooth" type="radio" value="1" /></td>
+			<td style="text-align:center" width="120"><input name="smooth" type="radio" value="2" /></td>
+			<td style="text-align:center" width="120"><input name="smooth" type="radio" value="3" /></td>
+			<td style="text-align:center" width="120"><input name="smooth" type="radio" value="4" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<!-- End Data Collection Layout --><!-- Please note that Bootstrap CSS/JS and JQuery are 3rd party libraries that may update their url/code at any time. Amazon Mechanical Turk (MTurk) is including these libraries as a default option for you, but is not responsible for any changes to the external libraries --><!-- External CSS references -->
+<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" integrity="sha384-IS73LIqjtYesmURkDE9MXKbXqYA8rvKEp/ghicjem7Vc3mGRdQRptJSz60tvrB6+" rel="stylesheet" /><!-- Open internal style sheet -->
+<style type="text/css">#collapseTrigger{
+  color:#fff;
+  display: block; 
+  text-decoration: none;
+}
+#submitButton{
+  white-space: normal;
+}
+.image{
+  margin-bottom: 15px; 
+}
+</style>
+<!-- End internal style sheet --><!-- External JS references --><script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js" integrity="sha384-s1ITto93iSMDxlp/79qhWHi+LsIi9Gx6yL+cOKDuymvihkfol83TYbLbOw+W/wv4" crossorigin="anonymous"></script><!-- Open internal javascript --><script>
+  $(document).ready(function() {
+    // Instructions expand/collapse
+    var content = $('#instructionBody');
+    var trigger = $('#collapseTrigger');
+    $('.collapse-text').text('(Click to show/hide)');
+    trigger.click(function(){
+      content.toggle();
+      var isVisible = content.is(':visible');
+      if(isVisible){
+        $('.collapse-text').text('(Click to show/hide)');
+      }else{
+        $('.collapse-text').text('(Click to show/hide)');
+      }
+    });
+    // end expand/collapse
+  });
+</script><!-- Close internal javascript -->

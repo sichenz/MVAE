@@ -1,0 +1,1 @@
+NIR has its own data script because I never updated NIR to work with the new one-hot encodings. NIR is converting to one-hot anyway, in the middle of the script.

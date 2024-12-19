@@ -1,0 +1,501 @@
+name,rank,city,state,freq
+Wal-Mart Stores,1,Bentonville,Arkansas,22
+Exxon Mobil Corporation,2,Irving,Texas,22
+Apple,3,Cupertino,California,22
+Berkshire Hathaway,4,Omaha,Nebraska,22
+McKesson Corporation,5,San Francisco,California,22
+UnitedHealth Group Incorporated,6,Minnetonka,Minnesota,22
+CVS Health Corporation,7,Woonsocket,Rhode Island,22
+General Motors Company,8,Detroit,Michigan,22
+Ford Motor Company,9,Dearborn,Michigan,22
+AT&T,10,Dallas,Texas,22
+General Electric Company,11,Fairfield,Connecticut,22
+AmerisourceBergen Corp.,12,Chesterbrook,Pennsylvania,22
+Verizon Communications,13,New York,New York,22
+Chevron Corporation,14,San Ramon,California,22
+Costco Wholesale Corporation,15,Issaquah,Washington,22
+Fannie Mae,16,Washington,District of Columbia,19
+The Kroger Company,17,Cincinnati,Ohio,22
+Amazon.com,18,Seattle,Washington,15
+Walgreens Boots Alliance,19,Deerfield,Illinois,22
+HP,20,Palo Alto,California,22
+Cardinal Health,21,Dublin,Ohio,22
+Express Scripts Holding Company,22,St. Louis,Missouri,17
+JPMorgan Chase & Co.,23,New York,New York,22
+The Boeing Company,24,Chicago,Illinois,22
+Microsoft Corporation,25,Redmond,Washington,22
+Bank of America Corporation,26,Charlotte,North Carolina,22
+Wells Fargo & Company,27,San Francisco,California,22
+The Home Depot,28,Atlanta,Georgia,22
+Citigroup,29,New York,New York,22
+Phillips 66,30,Houston,Texas,4
+International Business Machines Corporation,31,Armonk,New York,22
+Valero Energy Corporation,32,San Antonio,Texas,18
+Anthem,33,Indianapolis,Indiana,22
+The Procter & Gamble Company,34,Cincinnati,Ohio,22
+State Farm Insurance Cos.,35,Bloomington,Illinois,22
+Alphabet,36,Mountain View,California,11
+Comcast Corporation,37,Philadelphia,Pennsylvania,21
+Target Corporation,38,Minneapolis,Minnesota,22
+Johnson & Johnson,39,New Brunswick,New Jersey,22
+MetLife,40,New York,New York,22
+Archer-Daniels-Midland Company,41,Chicago,Illinois,22
+Marathon Petroleum Corporation,42,Findlay,Ohio,5
+Freddie Mac,43,McLean,Virginia,19
+PepsiCo,44,Purchase,New York,22
+United Technologies Corporation,45,Farmington,Connecticut,22
+Aetna,46,Hartford,Connecticut,16
+Lowe's Companies,47,Mooresville,North Carolina,22
+United Parcel Service,48,Atlanta,Georgia,22
+American International Group,49,New York,New York,22
+Prudential Financial,50,Newark,New Jersey,22
+Intel Corporation,51,Santa Clara,California,22
+Humana,52,Louisville,Kentucky,22
+The Walt Disney Company,53,Burbank,California,22
+Cisco Systems,54,San Jose,California,20
+Pfizer,55,New York,New York,22
+The Dow Chemical Company,56,Midland,Michigan,22
+Sysco Corporation,57,Houston,Texas,22
+FedEx Corporation,58,Memphis,Tennessee,22
+Caterpillar,59,Peoria,Illinois,22
+Lockheed Martin Corporation,60,Bethesda,Maryland,22
+New York Life Insurance Company,61,New York,New York,22
+The Coca-Cola Company,62,Atlanta,Georgia,22
+HCA Holdings,63,Nashville,Tennessee,22
+Ingram Micro,64,Irvine,California,20
+Energy Transfer Equity,65,Dallas,Texas,10
+Tyson Foods,66,Springdale,Arkansas,22
+American Airlines Group,67,Fort Worth,Texas,22
+Delta Air Lines,68,Atlanta,Georgia,22
+Nationwide Mutual Insurance Co.,69,Columbus,Ohio,22
+Johnson Controls,70,Milwaukee,Wisconsin,22
+Best Buy Co.,71,Richfield,Minnesota,22
+Merck & Co.,72,Kenilworth,New Jersey,22
+Liberty Mutual Holding Company,73,Boston,Massachusetts,22
+The Goldman Sachs Group,74,New York,New York,17
+Honeywell International,75,Morris Plains,New Jersey,22
+Massachusetts Mutual Life Insurance Company,76,Springfield,Massachusetts,22
+Oracle Corporation,77,Redwood City,California,21
+Morgan Stanley,78,New York,New York,22
+CIGNA Corporation,79,Bloomfield,Connecticut,22
+United Continental Holdings,80,Chicago,Illinois,22
+The Allstate Corporation,81,Northbrook,Illinois,21
+Teachers Insurance and Annuity Association,82,New York,New York,19
+INTL FCStone,83,New York,New York,8
+CHS,84,Inver Grove Heights,Minnesota,17
+American Express Company,85,New York,New York,22
+Gilead Sciences,86,Foster City,California,8
+Publix Super Markets,87,Lakeland,Florida,22
+General Dynamics Corporation,88,Falls Church,Virginia,22
+The TJX Companies,89,Framingham,Massachusetts,22
+ConocoPhillips,90,Houston,Texas,22
+Nike,91,Beaverton,Oregon,22
+World Fuel Services Corporation,92,Miami,Florida,12
+3M Company,93,St. Paul,Minnesota,22
+Mondelez International,94,Deerfield,Illinois,9
+Exelon Corporation,95,Chicago,Illinois,22
+Twenty-First Century Fox,96,New York,New York,12
+Deere & Company,97,Moline,Illinois,22
+Tesoro Corporation,98,San Antonio,Texas,17
+Time Warner,99,New York,New York,17
+Northwestern Mutual Life Insurance Company,100,Milwaukee,Wisconsin,22
+E.I. du Pont de Nemours and Company,101,Wilmington,Delaware,22
+Avnet,102,Phoenix,Arizona,22
+Macy's,103,Cincinnati,Ohio,22
+Enterprise Products Partners L.P.,104,Houston,Texas,11
+The Travelers Companies,105,New York,New York,22
+Philip Morris International,106,New York,New York,8
+Rite Aid Corporation,107,Camp Hill,Pennsylvania,22
+Tech Data Corporation,108,Clearwater,Florida,22
+McDonald's Corporation,109,Oak Brook,Illinois,22
+Qualcomm Incorporated,110,San Diego,California,17
+Sears Holdings Corporation,111,Hoffman Estates,Illinois,22
+Capital One Financial Corporation,112,McLean,Virginia,17
+EMC Corporation,113,Hopkinton,Massachusetts,19
+United Services Automobile Association,114,San Antonio,Texas,22
+Duke Energy Corporation,115,Charlotte,North Carolina,22
+Time Warner Cable,116,New York,New York,7
+Halliburton Company,117,Houston,Texas,22
+Northrop Grumman Corporation,118,Falls Church,Virginia,22
+Arrow Electronics,119,Centennial,Colorado,22
+Raytheon Company,120,Waltham,Massachusetts,22
+Plains GP Holdings,121,Houston,Texas,3
+US Foods Holding Corp.,122,Rosemont,Illinois,5
+AbbVie,123,North Chicago,Illinois,3
+Centene Corporation,124,St. Louis,Missouri,7
+Community Health Systems,125,Franklin,Tennessee,10
+Alcoa,126,New York,New York,22
+International Paper Company,127,Memphis,Tennessee,22
+Emerson Electric Co.,128,St. Louis,Missouri,22
+Union Pacific Corporation,129,Omaha,Nebraska,22
+Amgen,130,Thousand Oaks,California,17
+U.S. Bancorp,131,Minneapolis,Minnesota,18
+Staples,132,Framingham,Massachusetts,21
+Danaher Corporation,133,Washington,District of Columbia,18
+Whirlpool Corporation,134,Benton Harbor,Michigan,22
+Aflac Incorporated,135,Columbus,Georgia,22
+AutoNation,136,Fort Lauderdale,Florida,19
+The Progressive Corporation,137,Mayfield Village,Ohio,22
+Abbott Laboratories,138,Abbott Park,Illinois,22
+Dollar General Corporation,139,Goodlettsville,Tennessee,18
+Tenet Healthcare Corporation,140,Dallas,Texas,22
+Eli Lilly and Company,141,Indianapolis,Indiana,22
+Southwest Airlines Co.,142,Dallas,Texas,22
+Penske Automotive Group,143,Bloomfield Hills,Michigan,18
+ManpowerGroup,144,Milwaukee,Wisconsin,22
+Kohl's Corporation,145,Menomonee Falls,Wisconsin,19
+Starbucks Corporation,146,Seattle,Washington,14
+PACCAR Inc,147,Bellevue,Washington,22
+Cummins,148,Columbus,Indiana,22
+Altria Group,149,Richmond,Virginia,22
+Xerox Corporation,150,Norwalk,Connecticut,22
+Kimberly-Clark Corporation,151,Irving,Texas,22
+The Hartford Financial Services Group,152,Hartford,Connecticut,21
+The Kraft Heinz Company,153,Pittsburgh,Pennsylvania,22
+Lear Corporation,154,Southfield,Michigan,22
+Fluor Corporation,155,Irving,Texas,15
+AECOM,156,Los Angeles,California,8
+Facebook,157,Menlo Park,California,4
+Jabil Circuit,158,St. Petersburg,Florida,15
+CenturyLink,159,Monroe,Lousiana,7
+Supervalu,160,Eden Prairie,Minnesota,22
+General Mills,161,Minneapolis,Minnesota,22
+The Southern Company,162,Atlanta,Georgia,22
+NextEra Energy,163,Juno Beach,Florida,22
+Thermo Fisher Scientific,164,Waltham,Massachusetts,14
+American Electric Power Company,165,Columbus,Ohio,22
+PG&E Corporation,166,San Francisco,California,22
+NGL Energy Partners LP,167,Tulsa,Oklahoma,2
+Bristol-Myers Squibb Company,168,New York,New York,22
+The Goodyear Tire & Rubber Company,169,Akron,Ohio,22
+Nucor Corporation,170,Charlotte,North Carolina,22
+The PNC Financial Services Group,171,Pittsburgh,Pennsylvania,22
+Health Net,172,Woodland Hills,California,22
+Micron Technology,173,Boise,Idaho,19
+Colgate-Palmolive Company,174,New York,New York,22
+Freeport-McMoRan,175,Phoenix,Arizona,11
+ConAgra Foods,176,Omaha,Nebraska,22
+The Gap,177,San Francisco,California,22
+Baker Hughes Incorporated,178,Houston,Texas,22
+The Bank of New York Mellon Corporation,179,New York,New York,22
+Dollar Tree,180,Chesapeake,Virginia,8
+Whole Foods Market,181,Austin,Texas,12
+PPG Industries,182,Pittsburgh,Pennsylvania,22
+Genuine Parts Company,183,Atlanta,Georgia,22
+Icahn Enterprises L.P.,184,New York,New York,8
+Performance Food Group Company,185,Richmond,Virginia,8
+Omnicom Group,186,New York,New York,20
+DISH Network Corporation,187,Englewood,Colorado,15
+FirstEnergy Corp.,188,Akron,Ohio,21
+Monsanto Company,189,St. Louis,Missouri,13
+The AES Corporation,190,Arlington,Virginia,16
+CarMax,191,Richmond,Virginia,13
+National Oilwell Varco,192,Houston,Texas,11
+NRG Energy,193,Princeton,New Jersey,10
+Western Digital Corporation,194,Irvine,California,13
+Marriott International,195,Bethesda,Maryland,18
+Office Depot,196,Boca Raton,Florida,22
+Nordstrom,197,Seattle,Washington,22
+Kinder Morgan,198,Houston,Texas,13
+Aramark,199,Philadelphia,Pennsylvania,22
+DaVita HealthCare Partners,200,Denver,Colorado,10
+Molina Healthcare,201,Long Beach,California,5
+WellCare Health Plans,202,Tampa,Florida,8
+CBS Corporation,203,New York,New York,22
+Visa,204,Foster City,California,8
+Lincoln National Corporation,205,Radnor,Pennsylvania,22
+Ecolab,206,St. Paul,Minnesota,14
+Kellogg Company,207,Battle Creek,Michigan,22
+C. H. Robinson Worldwide,208,Eden Prairie,Minnesota,15
+Textron,209,Providence,Rhode Island,22
+Loews Corporation,210,New York,New York,22
+Illinois Tool Works,211,Glenview,Illinois,22
+Synnex Corporation,212,Fremont,California,10
+Viacom,213,New York,New York,11
+HollyFrontier Corporation,214,Dallas,Texas,9
+Land O'Lakes,215,Arden Hills,Minnesota,14
+Devon Energy Corporation,216,Oklahoma City,Oklahoma,15
+PBF Energy,217,Parsippany,New Jersey,4
+Yum! Brands,218,Louisville,Kentucky,18
+Texas Instruments Incorporated,219,Dallas,Texas,22
+CDW Corporation,220,Lincolnshire,Illinois,12
+Waste Management,221,Houston,Texas,18
+Marsh & McLennan Companies,222,New York,New York,22
+Chesapeake Energy Corporation,223,Oklahoma City,Oklahoma,11
+Parker-Hannifin Corporation,224,Cleveland,Ohio,22
+Occidental Petroleum Corporation,225,Houston,Texas,22
+Guardian Life Ins. Co. of America,226,New York,New York,22
+Farmers Insurance Exchange,227,Woodland Hills,California,2
+J.C. Penney Company,228,Plano,Texas,22
+Consolidated Edison,229,New York,New York,22
+Cognizant Technology Solutions Corporation,230,Teaneck,New Jersey,6
+V.F. Corporation,231,Greensboro,North Carolina,22
+Ameriprise Financial,232,Minneapolis,Minnesota,10
+Computer Sciences Corporation,233,Falls Church,Virginia,22
+L Brands,234,Columbus,Ohio,22
+Jacobs Engineering Group,235,Pasadena,California,16
+Principal Financial Group,236,Des Moines,Iowa,22
+Ross Stores,237,Dublin,California,14
+Bed Bath & Beyond,238,Union,New Jersey,13
+CSX Corporation,239,Jacksonville,Florida,22
+"Toys ""R"" Us",240,Wayne,New Jersey,22
+Las Vegas Sands Corp.,241,Las Vegas,Nevada,7
+Leucadia National Corporation,242,New York,New York,4
+Dominion Resources,243,Richmond,Virginia,22
+United States Steel Corporation,244,Pittsburgh,Pennsylvania,14
+L-3 Communications Holdings,245,New York,New York,14
+Edison International,246,Rosemead,California,22
+Entergy Corporation,247,New Orleans,Lousiana,22
+Automatic Data Processing,248,Roseland,New Jersey,22
+First Data Corporation,249,Atlanta,Georgia,22
+BlackRock,250,New York,New York,9
+WestRock Company,251,Richmond,Virginia,5
+Voya Financial,252,New York,New York,2
+The Sherwin-Williams Company,253,Cleveland,Ohio,22
+Hilton Worldwide Holdings,254,McLean,Virginia,13
+R.R. Donnelley & Sons Company,255,Chicago,Illinois,22
+Stanley Black & Decker,256,New Britain,Connecticut,9
+Xcel Energy,257,Minneapolis,Minnesota,20
+Murphy USA,258,El Dorado,Arkansas,3
+CBRE Group,259,Los Angeles,California,9
+D.R. Horton,260,Fort Worth,Texas,14
+The Estee Lauder Companies,261,New York,New York,21
+Praxair,262,Danbury,Connecticut,22
+Biogen,263,Cambridge,Massachusetts,7
+State Street Corporation,264,Boston,Massachusetts,21
+Unum Group,265,Chattanooga,Tennessee,21
+Reynolds American,266,Winston-Salem,North Carolina,17
+Group 1 Automotive,267,Houston,Texas,16
+Henry Schein,268,Melville,New York,13
+Hertz Global Holdings,269,Estero,Florida,9
+Norfolk Southern Corporation,270,Norfolk,Virginia,22
+Reinsurance Group of America,271,Chesterfield,Missouri,7
+Public Service Enterprise Group Incorporated,272,Newark,New Jersey,22
+BB&T Corporation,273,Winston-Salem,North Carolina,18
+DTE Energy Company,274,Detroit,Michigan,22
+Assurant,275,New York,New York,12
+Global Partners LP,276,Waltham,Massachusetts,10
+Huntsman Corporation,277,The Woodlands,Texas,11
+Becton Dickinson and Company,278,Franklin Lakes,New Jersey,22
+Sempra Energy,279,San Diego,California,18
+AutoZone,280,Memphis,Tennessee,18
+Navistar International Corporation,281,Lisle,Illinois,20
+Precision Castparts Corp.,282,Portland,Oregon,9
+Discover Financial Services,283,Riverwoods,Illinois,8
+Liberty Interactive Corporation,284,Englewood,Colorado,12
+W.W. Grainger,285,Lake Forest,Illinois,22
+Baxter International,286,Deerfield,Illinois,22
+Stryker Corporation,287,Kalamazoo,Michigan,14
+Air Products & Chemicals,288,Allentown,Pennsylvania,22
+Western Refining,289,El Paso,Texas,9
+Universal Health Services,290,King of Prussia,Pennsylvania,13
+Owens & Minor,291,Mechanicsville,Virginia,22
+Charter Communications,292,Stamford,Connecticut,16
+Advance Auto Parts,293,Roanoke,Virginia,14
+MasterCard Incorporated,294,Purchase,New York,8
+Applied Materials,295,Santa Clara,California,21
+Eastman Chemical Company,296,Kingsport,Tennessee,22
+Sonic Automotive,297,Charlotte,North Carolina,17
+Ally Financial,298,Detroit,Michigan,9
+CST Brands,299,San Antonio,Texas,3
+eBay,300,San Jose,California,11
+Lennar Corporation,301,Miami,Florida,12
+GameStop Corp.,302,Grapevine,Texas,10
+Reliance Steel & Aluminum Co.,303,Los Angeles,California,10
+Hormel Foods Corporation,304,Austin,Minnesota,22
+Celgene Corporation,305,Summit,New Jersey,5
+Genworth Financial,306,Richmond,Virginia,11
+PayPal Holdings,307,San Jose,California,1
+The Priceline Group,308,Norwalk,Connecticut,4
+MGM Resorts International,309,Las Vegas,Nevada,16
+Autoliv,310,Auburn Hills,Michigan,18
+Fidelity National Financial,311,Jacksonville,Florida,9
+Republic Services,312,Phoenix,Arizona,7
+Corning Incorporated,313,Corning,New York,21
+Peter Kiewit Sons',314,Omaha,Nebraska,17
+Univar,315,Downers Grove,Illinois,1
+The Mosaic Company,316,Plymouth,Minnesota,11
+Core-Mark Holding Company,317,South San Francisco,California,7
+Thrivent Financial for Lutherans,318,Minneapolis,Minnesota,22
+Cameron International Corporation,319,Houston,Texas,9
+HD Supply Holdings,320,Atlanta,Georgia,4
+Crown Holdings,321,Philadelphia,Pennsylvania,22
+EOG Resources,322,Houston,Texas,8
+Veritiv Corp,323,Atlanta,Georgia,1
+Anadarko Petroleum Corporation,324,The Woodlands,Texas,16
+Laboratory Corporation of America Holdings,325,Burlington,North Carolina,7
+Pacific Life,326,Newport Beach,California,20
+News Corporation,327,New York,New York,2
+Jarden Corporation,328,Boca Raton,Florida,9
+SunTrust Banks,329,Atlanta,Georgia,22
+Avis Budget Group,330,Parsippany,New Jersey,19
+Broadcom Corporation,331,Irvine,California,8
+American Family Insurance Group,332,Madison,Wisconsin,20
+Level 3 Communications,333,Broomfield,Colorado,12
+Tenneco,334,Lake Forest,Illinois,22
+United Natural Foods,335,Providence,Rhode Island,4
+Dean Foods Company,336,Dallas,Texas,18
+Campbell Soup Company,337,Camden,New Jersey,22
+Mohawk Industries,338,Calhoun,Georgia,17
+BorgWarner,339,Auburn Hills,Michigan,10
+PVH Corp.,340,New York,New York,6
+Ball Corporation,341,Broomfield,Colorado,20
+O'Reilly Automotive,342,Springfield,Missouri,7
+Eversource Energy,343,Springfield,Massachusetts,21
+Franklin Resources,344,San Mateo,California,11
+Masco Corporation,345,Taylor,Michigan,22
+Lithia Motors,346,Medford,Oregon,2
+KKR & Co. L.P.,347,New York,New York,5
+ONEOK,348,Tulsa,Oklahoma,14
+Newmont Mining Corporation,349,Greenwood Village,Colorado,13
+PPL Corporation,350,Allentown,Pennsylvania,22
+SpartanNash Company,351,Byron Center,Michigan,6
+Quanta Services,352,Houston,Texas,4
+XPO Logistics,353,Greenwich,Connecticut,1
+Ralph Lauren Corporation,354,New York,New York,8
+The Interpublic Group of Companies,355,New York,New York,19
+Steel Dynamics,356,Fort Wayne,Indiana,7
+WESCO International,357,Pittsburgh,Pennsylvania,18
+Quest Diagnostics Incorporated,358,Madison,New Jersey,16
+Boston Scientific Corporation,359,Marlborough,Massachusetts,13
+AGCO Corporation,360,Duluth,Georgia,15
+Foot Locker,361,New York,New York,22
+The Hershey Company,362,Hershey,Pennsylvania,22
+CenterPoint Energy,363,Houston,Texas,22
+The Williams Companies,364,Tulsa,Oklahoma,22
+Dick's Sporting Goods,365,Coraopolis,Pennsylvania,7
+Live Nation Entertainment,366,Beverly Hills,California,7
+Mutual of Omaha Insurance Company,367,Omaha,Nebraska,20
+W.R. Berkley Corporation,368,Greenwich,Connecticut,13
+LKQ Corporation,369,Chicago,Illinois,3
+Avon Products,370,New York,New York,22
+Darden Restaurants,371,Orlando,Florida,20
+Kindred Healthcare,372,Louisville,Kentucky,13
+Weyerhaeuser Company,373,Federal Way,Washington,22
+Casey's General Stores,374,Ankeny,Iowa,6
+Sealed Air Corporation,375,Charlotte,North Carolina,19
+Fifth Third Bancorp,376,Cincinnati,Ohio,17
+Dover Corporation,377,Downers Grove,Illinois,22
+Huntington Ingalls Industries,378,Newport News,Virginia,4
+Netflix,379,Los Gatos,California,2
+Dillard's,380,Little Rock,Arkansas,22
+EMCOR Group,381,Norwalk,Connecticut,16
+The Jones Financial Companies,382,Des Peres,Missouri,4
+AK Steel Holding Corporation,383,West Chester,Ohio,6
+UGI Corporation,384,King of Prussia,Pennsylvania,12
+Expedia,385,Bellevue,Washington,2
+salesforce.com,386,San Francisco,California,2
+Targa Resources Corp.,387,Houston,Texas,8
+Apache Corporation,388,Houston,Texas,13
+Spirit AeroSystems Holdings,389,Wichita,Kansas,2
+Expeditors International of Washington,390,Seattle,Washington,9
+Anixter International,391,Glenview,Illinois,14
+Fidelity National Information Services,392,Jacksonville,Florida,7
+Asbury Automotive Group,393,Duluth,Georgia,10
+Hess Corporation,394,New York,New York,22
+Ryder System,395,Miami,Florida,22
+Terex Corporation,396,Westport,Connecticut,13
+Coca-Cola European Partners,397,Atlanta,Georgia,6
+Auto-Owners Insurance Group,398,Lansing,Michigan,14
+Cablevision Systems Corporation,399,Bethpage,New York,18
+Symantec Corporation,400,Mountain View,California,9
+The Charles Schwab Corporation,401,San Francisco,California,18
+Calpine Corporation,402,Houston,Texas,15
+CMS Energy Corporation,403,Jackson,Michigan,22
+Alliance Data Systems Corporation,404,Plano,Texas,2
+JetBlue Airways Corporation,405,Long Island City,New York,4
+Discovery Communications,406,Silver Spring,Maryland,3
+Trinity Industries,407,Dallas,Texas,2
+Sanmina Corporation,408,San Jose,California,16
+NCR Corporation,409,Duluth,Georgia,19
+FMC Technologies,410,Houston,Texas,8
+Erie Insurance Group,411,Erie,Pennsylvania,13
+Rockwell Automation,412,Milwaukee,Wisconsin,22
+Dr Pepper Snapple Group,413,Plano,Texas,8
+iHeartMedia,414,San Antonio,Texas,16
+Tractor Supply Company,415,Brentwood,Tennessee,3
+J.B. Hunt Transport Services,416,Lowell,Arkansas,4
+Commercial Metals Company,417,Irving,Texas,12
+Owens-Illinois,418,Perrysburg,Ohio,22
+Harman International Industries,419,Stamford,Connecticut,2
+Baxalta Incorporated,420,Bannockburn,Illinois,1
+American Financial Group,421,Cincinnati,Ohio,17
+NetApp,422,Sunnyvale,California,5
+Graybar Electric Company,423,St. Louis,Missouri,22
+Oshkosh Corporation,424,Oshkosh,Wisconsin,9
+Ameren Corporation,425,St. Louis,Missouri,19
+A-Mark Precious Metals,426,Santa Monica,California,2
+Barnes & Noble,427,New York,New York,19
+Dana Holding Corporation,428,Maumee,Ohio,22
+Constellation Brands,429,Victor,New York,4
+LifePoint Health,430,Brentwood,Tennessee,2
+Zimmer Biomet Holdings,431,Warsaw,Indiana,1
+Harley-Davidson,432,Milwaukee,Wisconsin,15
+PulteGroup,433,Atlanta,Georgia,14
+Newell Brands,434,Atlanta,Georgia,21
+Avery Dennison Corporation,435,Glendale,California,22
+Jones Lang LaSalle Incorporated,436,Chicago,Illinois,2
+WEC Energy Group,437,Milwaukee,Wisconsin,7
+Marathon Oil Corporation,438,Houston,Texas,22
+TravelCenters of America LLC,439,Westlake,Ohio,9
+United Rentals,440,Stamford,Connecticut,3
+HRG Group,441,New York,New York,3
+Old Republic International Corporation,442,Chicago,Illinois,5
+Windstream Holdings,443,Little Rock,Arkansas,4
+Starwood Hotels & Resorts Worldwide,444,Stamford,Connecticut,18
+Delek US Holdings,445,Brentwood,Tennessee,2
+Packaging Corporation of America,446,Lake Forest,Illinois,2
+Quintiles Transnational Holdings,447,Durham,North Carolina,3
+Hanesbrands,448,Winston-Salem,North Carolina,2
+Realogy Holdings Corp.,449,Madison,New Jersey,6
+Mattel,450,El Segundo,California,22
+Motorola Solutions,451,Schaumburg,Illinois,22
+The J.M. Smucker Company,452,Orrville,Ohio,6
+Celanese Corporation,453,Irving,Texas,11
+Regions Financial Corporation,453,Birmingham,Alabama,18
+The Clorox Company,455,Oakland,California,17
+Ingredion Incorporated,456,Westchester,Illinois,5
+Genesis Healthcare,457,Kennett Square,Pennsylvania,1
+Peabody Energy Corporation,458,St. Louis,Missouri,12
+Alaska Air Group,459,Seattle,Washington,3
+Seaboard Corporation,460,Merriam,Kansas,6
+Frontier Communications Corporation,461,Norwalk,Connecticut,3
+Amphenol Corporation,462,Wallingford,Connecticut,2
+Lansing Trade Group,463,Overland Park,Kansas,2
+SanDisk Corporation,464,Milpitas,California,6
+St. Jude Medical,465,St. Paul,Minnesota,7
+Wyndham Worldwide Corporation,466,Parsippany,New Jersey,3
+Kelly Services,467,Troy,Michigan,22
+The Western Union Company,468,Englewood,Colorado,10
+Envision Healthcare Holdings,469,Greenwood Village,Colorado,1
+Visteon Corporation,470,Van Buren Township,Michigan,15
+Arthur J. Gallagher & Co.,471,Itasca,Illinois,1
+Host Hotels & Resorts,472,Bethesda,Maryland,15
+Ashland,472,Covington,Kentucky,22
+Insight Enterprises,474,Tempe,Arizona,8
+Energy Future Holdings Corp.,475,Dallas,Texas,22
+Markel Corporation,476,Glen Allen,Virginia,1
+Essendant,477,Deerfield,Illinois,18
+CH2M HILL Companies,478,Englewood,Colorado,8
+Western & Southern Mutual Holding Company,479,Cincinnati,Ohio,12
+Owens Corning,480,Toledo,Ohio,22
+S&P Global,481,New York,New York,22
+Raymond James Financial,482,St. Petersburg,Florida,1
+NiSource,483,Merrillville,Indiana,18
+Airgas,484,Radnor,Pennsylvania,3
+ABM Industries Incorporated,485,New York,New York,1
+Citizens Financial Group,486,Providence,Rhode Island,1
+Booz Allen Hamilton Holding Corp.,487,McLean,Virginia,6
+Simon Property Group,488,Indianapolis,Indiana,3
+Domtar Corporation,489,Fort Mill,South Carolina,8
+Rockwell Collins,490,Cedar Rapids,Iowa,5
+Lam Research Corporation,491,Fremont,California,1
+Fiserv,492,Brookfield,Wisconsin,6
+Spectra Energy Corp,493,Houston,Texas,9
+Navient Corporation,494,Wilmington,Delaware,2
+Big Lots,495,Columbus,Ohio,19
+Telephone and Data Systems,496,Chicago,Illinois,10
+First American Financial Corporation,497,Santa Ana,California,2
+NVR,498,Reston,Virginia,7
+Cincinnati Financial Corporation,499,Fairfield,Ohio,2
+Burlington Stores,500,Burlington,New Jersey,1

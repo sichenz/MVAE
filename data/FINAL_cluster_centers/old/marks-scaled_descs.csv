@@ -1,0 +1,16 @@
+,long_desc,short_desc
+0,"medium-sized marks, mostly with some hollowness to them",med_hollow_detailed
+1,large ovals or somewhat ovular dense shapes,large_ovals
+2,"thin wide medium-sized shapes, like combined letters, or fairly wide marks",medium_wide_thin
+3,small wispy lines,small_wispy_lines
+4,"small geometric marks, somewhat hard to describe, not any specific shape",small_geometric_marks
+5,"typically circular, medium-large sized",large_circular
+6,small circular,small_circular
+7,"large, mostly squares, a few circles",large_square_circle
+8,small curvy line based details,small_curvy_line-based
+9,"horizontal rectangles or ovals, mostly big",big_thin_horizontal
+10,"small detailed marks, not of any particular shape",small_details
+11,"mostly overlaid ovals or rectangles, medium sized",medium_horizontal_overlaid
+12,small vertical shapes,small_vertical
+13,small to medium sized squares,small-medium_squares
+14,"small hollow shapes, many mis-classified letters, but not all",small_hollow_misclass_letters

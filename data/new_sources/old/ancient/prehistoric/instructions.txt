@@ -1,0 +1,12 @@
+For each company on the list:
+
+ 1. Check if logo is in the folder; if not, find the logo on Google Images and save it with the corresponding company name. To do that, right click the image on the Google page, click View Image, then right click on the image, and save it in the folder with the same name as listed in the Excel sheet (i.e. if the name in the sheet is "amazon", then the resulting file should be either "amazon.jpg", or "amazon.png"; .jpg or .png files are preferred).
+ 
+ 2. Go to company's website; retrieve all text from "About Us" or "Company Description" or "Mission Statement" ... page(s). If there is an "Investor Relations" page, please also retrieve the paragraph describing the company from that page. In general, find text that describes the company's brand and values. The goal is to find text describing what the company stands for, not just what it does.
+ 	- Example of something good: Amazon aims to disrupt retail by making consumers lives more convenient. (Note the adjectives, emotional language, goal-oriented focus.)
+	- Example of something bad: Amazon is the largest online retailer in the United States. (This just describes their function.)
+	
+ 3. Check if company is matched to CrunchBase by seeing if there is already a matching tag in the cb_id column, and a description in the cb_desc column:
+ 	- If these two things are there, done.
+	- If neither is there, search for the company on www.crunchbase.com. If it is listed on Crunchbase, copy and paste the ID into the cb_id column, and copy and paste the textual description into the cb_desc column. The ID can be found in the URL: crunchbase.com/organization/..id..
+	- If one is missing, locate the other by following the steps in the bullet above. 
